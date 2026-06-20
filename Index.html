@@ -1,0 +1,319 @@
+index.html
+```html
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پژوهش‌های حقوق عمومی</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Vazirmatn',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#222;
+line-height:1.9;
+}
+
+header{
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+padding:20px 8%;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin-right:20px;
+font-weight:500;
+}
+
+.hero{
+height:85vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.55),
+rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f');
+background-size:cover;
+background-position:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:52px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:800px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 30px;
+background:#d4af37;
+color:#111;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.section{
+padding:80px 8%;
+}
+
+.section-title{
+font-size:34px;
+margin-bottom:40px;
+text-align:center;
+color:#0f172a;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#1e293b;
+}
+
+.articles{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.article{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.article:hover{
+transform:translateY(-8px);
+}
+
+.article h4{
+margin-bottom:10px;
+color:#0f172a;
+}
+
+.contact{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:70px 8%;
+}
+
+.contact input,
+.contact textarea{
+width:100%;
+max-width:600px;
+padding:12px;
+margin:10px auto;
+display:block;
+border:none;
+border-radius:8px;
+}
+
+.contact button{
+background:#d4af37;
+border:none;
+padding:12px 30px;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
+
+footer{
+background:#020617;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.menu{
+display:none;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">حقوق عمومی</div>
+
+<div class="menu">
+<a href="#about">درباره من</a>
+<a href="#articles">مقالات</a>
+<a href="#blog">یادداشت‌ها</a>
+<a href="#contact">تماس</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>پژوهش‌های حقوق عمومی و حقوق فناوری</h1>
+<p>
+تحلیل مسائل نوین حقوق عمومی، حقوق شهروندی،
+حکمرانی الگوریتمی، هوش مصنوعی و حقوق اساسی
+</p>
+
+<a href="#articles" class="btn">مشاهده مقالات</a>
+</div>
+</section>
+
+<section class="section" id="about">
+
+<h2 class="section-title">درباره من</h2>
+
+<div class="about">
+
+<div class="card">
+<h3>معرفی</h3>
+<p>
+دانشجوی حقوق عمومی با علاقه‌مندی به پژوهش در
+زمینه حقوق اساسی، حقوق شهروندی،
+حکمرانی الگوریتمی و هوش مصنوعی.
+</p>
+</div>
+
+<div class="card">
+<h3>حوزه‌های پژوهشی</h3>
+
+<ul>
+<li>حقوق عمومی</li>
+<li>حقوق اساسی</li>
+<li>حقوق شهروندی</li>
+<li>هوش مصنوعی و حقوق</li>
+<li>حکمرانی الگوریتمی</li>
+<li>حقوق آموزش</li>
+</ul>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="articles">
+
+<h2 class="section-title">مقالات علمی</h2>
+
+<div class="articles">
+
+<div class="article">
+<h4>حق بر توضیح در تصمیمات مبتنی بر هوش مصنوعی</h4>
+<p>مطالعه‌ای در حقوق عمومی ایران.</p>
+</div>
+
+<div class="article">
+<h4>حکمرانی الگوریتمی و شفافیت اداری</h4>
+<p>چالش‌های حقوق عمومی در عصر داده.</p>
+</div>
+
+<div class="article">
+<h4>حمایت از داده‌های شخصی دانش‌آموزان</h4>
+<p>مطالعه تطبیقی ایران و اتحادیه اروپا.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="blog">
+
+<h2 class="section-title">یادداشت‌های حقوقی</h2>
+
+<div class="articles">
+
+<div class="article">
+<h4>حکمرانی الگوریتمی چیست؟</h4>
+<p>مقدمه‌ای بر یکی از مهم‌ترین مباحث حقوق عمومی.</p>
+</div>
+
+<div class="article">
+<h4>حقوق شهروندی در عصر دیجیتال</h4>
+<p>چالش‌ها و فرصت‌های نوین.</p>
+</div>
+
+<div class="article">
+<h4>هوش مصنوعی و دولت الکترونیک</h4>
+<p>فرصت‌ها و تهدیدهای حقوقی.</p>
+</div>
+
+</div>
+</section>
+
+<section class="contact" id="contact">
+
+<h2>ارتباط با من</h2>
+
+<input type="text" placeholder="نام شما">
+<input type="email" placeholder="ایمیل">
+
+<textarea rows="5"
+placeholder="پیام شما"></textarea>
+
+<button>ارسال پیام</button>
+
+</section>
+
+<footer>
+© 2026 تمامی حقوق محفوظ است
+</footer>
+
+</body>
+</html>
+```
